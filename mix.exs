@@ -6,7 +6,7 @@ defmodule Cobs.Mixfile do
       app: :cobs,
       version: "0.2.0",
       elixir: "~> 1.5",
-      start_permanent: Mix.env == :prod,
+      start_permanent: Mix.env() == :prod,
       description: description(),
       package: package(),
       deps: deps(),
@@ -15,7 +15,7 @@ defmodule Cobs.Mixfile do
       homepage_url: "https://github.com/krodelin/cobs-elixir",
       docs: [
         main: "readme",
-        extras: ["README.md"],
+        extras: ["README.md"]
       ]
     ]
   end
